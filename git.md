@@ -186,7 +186,7 @@ But before the task start, you need to prepare:
 
 ### Homework
   1. Checkout to development branch
-  2. Push development branch to remote (`git push -u origin developlemnt`)
+  2. Push development branch to remote (`git push -u origin development`)
      - Remember this code, in future we will only say like "push development branch" and you should understand what should you type
   3. Create branch called "staging"
   4. Checkout to staging branch

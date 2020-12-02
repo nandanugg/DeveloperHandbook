@@ -170,10 +170,11 @@ But before the task start, you need to prepare:
   2. That file was meant to be a grocery buy list, so make an introduction to that file that says it was a grocery buy list
   3. Commit by any message you want, but try to tell what you do in short words
   4. Checkout to development branch
-  5. Fill that file with fake grocery list, use your imagination to fill it
-  6. Commit, as usual, try to tell what you do in short words
-  7. Checkout to master branch
-  8. Merge from development branch
+  5. Merge from master branch
+  6. Fill buyList.md with fake grocery list, use your imagination to fill it
+  7. Commit, as usual, try to tell what you do in short words
+  8. Checkout to master branch
+  9. Merge from development branch
 
 ### Task 3
   1. Create a github repository, make the project name same as our current git folder name

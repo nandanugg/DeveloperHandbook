@@ -87,8 +87,8 @@ Remotes
 > developer by working in the same repository
 - `git remote add <remote name> <remote url>` add a remote (repository) to our current folder
 - `git remote -v` lists of remotes that we already add
-- `git remote rename <old branch name> <new branch name>` rename a remote alias
-- `git remote remove <branch name>` remove a remote alias
+- `git remote rename <old remote name> <new remote name>` rename a remote alias
+- `git remote remove <remote name>` remove a remote alias
 
 Pushing
 > Pushing means we push our local commit in our branch to the repository

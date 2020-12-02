@@ -156,7 +156,7 @@ But before the task start, you need to prepare:
      - One paragraph long bio about you
      - Your motivation for joining this program
      - What job role that you want to take after following this program
-  3. [Add & Commit](#baving) (we will call it "commit" in the future) by message "first commit"
+  3. [Add & Commit](#saving) (we will call it "commit" in the future) by message "first commit"
   4. [Create a new branch](#branching) called development
   5. [Checkout](#branching) to that branch
   6. Edit aboutMe.md by adding

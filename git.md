@@ -19,7 +19,7 @@ There are lots of git command, don't force to memorize it, just learn the basics
 Initialization
 - `git init .` initiate git in current folder in terminal
 
-Saving
+### Saving
 > Remember, everytime we save, means we **stack** our save
 > 
 > Which means all of our saves are stacking everytime we save
@@ -27,7 +27,7 @@ Saving
 - `git commit` commit / save files and changes
   - `-m "<message>"` message we want to say to our save
 
-Branching
+### Branching
 > Our save is saved in a branch
 > 
 > If we create a new branch and save, then our save is saved in that new branch
@@ -37,7 +37,7 @@ Branching
   - `-m <new branch name>` rename our current checkouted branch
   - `–a` see list of branches
 
-Merging
+### Merging
 > Merging is a way to use another branch saves and merge it into our branch
 - `git merge <branch we want to merge>` merge another branch to current checkouted branch
   - `-X theirs` accept all changes from incoming (another branch we want to merge) 
@@ -46,7 +46,7 @@ Merging
   - `git checkout --ours .` if we in currently in a conflict and want to accept all current changes
   - `--abort` cancel merge if we currently in a conflict
 
-Rebasing
+### Rebasing
 > we can imagine that creating a new branch means literally like a tree creating a branch
 > 
 > So rebasing means update the tree of our branch, if the tree grows, then the branch
@@ -56,7 +56,7 @@ Rebasing
   - `-X theirs` accept all changes from incoming (another branch we want to merge) 
   - `-X ours` accept all changes from current (our current checkouted branch) 
 
-Stashing
+### Stashing
 > Stashing is very useful if we forget to change our branch while doing our work
 > 
 > By Stashing, we stash our current changes, and then we can checkout to the branch
@@ -68,7 +68,7 @@ Stashing
 - `git stash apply <stash message or name>` apply our stash into current checkouted branch
 - `git stash drop <stash message or name>` delete our stash
 
-Resetting
+### Resetting
 > Sometimes we broke things up, these commands will help you fix things by resetting
 - `git log` see commit list
   - `--oneline` simplify the output
@@ -79,7 +79,7 @@ Resetting
 ----------
 
 ## Remote command 🌐
-Remotes
+### Remotes
 > Remotes is an alias for repository
 > 
 > And a repository is more like a Google Drive, but for codes, we can save our work
@@ -90,7 +90,7 @@ Remotes
 - `git remote rename <old remote name> <new remote name>` rename a remote alias
 - `git remote remove <remote name>` remove a remote alias
 
-Pushing
+### Pushing
 > Pushing means we push our local commit in our branch to the repository
 > 
 > After we push, we can access our pushed code from another computer, and another developer
@@ -100,9 +100,10 @@ Pushing
 > will also have a branch called master too, and so on
 - `git push <remote name> <current checkouted branch>` push all commits from our current checkouted branch to repository
   - `-u` set upstream, means if we want to push again next time, we don't need to type `git push <remote name> <current checkouted branch>` again
-- `git push` push current checkouted branch to remote, only can be run if we already use `git push -u ...`
+- `git push` push current checkouted branch to remote, only can be run if we already use `git push -u ...` in current checkouted branch
+- `git push origin --delete <branch name>` delete a branch in remote
 
-Pulling
+### Pulling
 > Pulling means we load the pushes in the repository branch into our local
 > project by updating the code
 > 
@@ -114,7 +115,7 @@ Pulling
 - `git checkout --theirs .` if we in currently in a conflict and want to accept all changes from remote
 - `git checkout --ours .` if we in currently in a conflict and want to accept all changes from our current branch
 
-Cloning
+### Cloning
 > Cloning means we can copy a work from somebody repository and place it into
 > our local computer
 > 
@@ -130,7 +131,7 @@ Fetching
 > unless we fetch, then we can see the new branch by running `git branch -a`
 - `git fetch` update information about new / deleted branch in the repository
 
-Pruning
+### Pruning
 > Pruning means we clean our local branches according to repository branch
 > 
 > Let's say somebody has deleted or rename a branch in repository, but our branch in local
@@ -155,15 +156,15 @@ But before the task start, you need to prepare:
      - One paragraph long bio about you
      - Your motivation for joining this program
      - What job role that you want to take after following this program
-  3. Add & Commit (we will call it "commit" in the future) by message "first commit"
-  4. Create a new branch called development
-  5. Checkout to that branch
+  3. [Add & Commit](#baving) (we will call it "commit" in the future) by message "first commit"
+  4. [Create a new branch](#branching) called development
+  5. [Checkout](#branching) to that branch
   6. Edit aboutMe.md by adding
      - Things that might disturb you while learning
      - What you usualy do to make yourself entertained while learning
   7. Commit by message "add disturbance and self entertaiment strat"
   8. Checkout to master branch
-  9. Merge from development branch to master branch
+  9. [Merge](#merging) from development branch to master branch
 
 ### Task 2
   1. Still in master branch, create a file called buyList.md
@@ -178,16 +179,16 @@ But before the task start, you need to prepare:
 
 ### Task 3
   1. Create a github repository, make the project name same as our current git folder name
-  2. Copy the git HTTPS url and add remote to our local git
-  3. Push to github
+  2. Copy the git HTTPS url and [add remote](#remotes) to our local git
+  3. [Push](#pushing) (`git push -u origin master`) to github
   4. Create a file called readme.md (still in master branch)
   5. Fill that file with introduction telling that this is your git practice repository
-  6. Commit & push
+  6. Commit & push (`git push`)
 
 ### Homework
   1. Checkout to development branch
   2. Push development branch to remote (`git push -u origin development`)
-     - Remember this code, in future we will only say like "push development branch" and you should understand what should you type
+     - Remember this code, in future we will only say like "push development branch" or "push staging branch" and you should understand what should you type
   3. Create branch called "staging"
   4. Checkout to staging branch
   5. Add new file called "todo.md"
@@ -197,6 +198,7 @@ But before the task start, you need to prepare:
   7. Checkout to master branch
   8. Merge from staging branch to master branch
   9. Commit & Push
+
 <!-- TODO add conflict practice -->
 <!-- TODO add git pull practice -->
 <!-- TODO add git modify local brach practice -->

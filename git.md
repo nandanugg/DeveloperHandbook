@@ -163,14 +163,14 @@ But before the task start, you need to prepare:
      - What you usualy do to make yourself entertained while learning
   7. Commit by message "add disturbance and self entertaiment strat"
   8. Checkout to master branch
-  9. Merge from development branch
+  9. Merge from development branch to master branch
 
 ### Task 2
   1. Still in master branch, create a file called buyList.md
   2. That file was meant to be a grocery buy list, so make an introduction to that file that says it was a grocery buy list
   3. Commit by any message you want, but try to tell what you do in short words
   4. Checkout to development branch
-  5. Merge from master branch
+  5. Merge from master branch to development branch
   6. Fill buyList.md with fake grocery list, use your imagination to fill it
   7. Commit, as usual, try to tell what you do in short words
   8. Checkout to master branch

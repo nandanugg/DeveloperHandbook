@@ -196,7 +196,7 @@ But before the task start, you need to prepare:
   6. Commit
   7. Checkout to master branch
   8. Merge from staging branch to master branch
-  9. Push
+  9. Commit & Push
 <!-- TODO add conflict practice -->
 <!-- TODO add git pull practice -->
 <!-- TODO add git modify local brach practice -->

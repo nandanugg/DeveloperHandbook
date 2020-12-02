@@ -174,7 +174,7 @@ But before the task start, you need to prepare:
   6. Fill buyList.md with fake grocery list, use your imagination to fill it
   7. Commit, as usual, try to tell what you do in short words
   8. Checkout to master branch
-  9. Merge from development branch
+  9. Merge from development branch to master branch
 
 ### Task 3
   1. Create a github repository, make the project name same as our current git folder name
@@ -184,6 +184,19 @@ But before the task start, you need to prepare:
   5. Fill that file with introduction telling that this is your git practice repository
   6. Commit & push
 
+### Homework
+  1. Checkout to development branch
+  2. Push development branch to remote (`git push -u origin developlemnt`)
+     - Remember this code, in future we will only say like "push development branch" and you should understand what should you type
+  3. Create branch called "staging"
+  4. Checkout to staging branch
+  5. Add new file called "todo.md"
+     - Give a introduction
+     - Fill it with imaginary todo
+  6. Commit
+  7. Checkout to master branch
+  8. Merge from staging branch to master branch
+  9. Push
 <!-- TODO add conflict practice -->
 <!-- TODO add git pull practice -->
 <!-- TODO add git modify local brach practice -->

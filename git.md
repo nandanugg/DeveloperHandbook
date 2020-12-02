@@ -87,8 +87,8 @@ Remotes
 > developer by working in the same repository
 - `git remote add <remote name> <remote url>` add a remote (repository) to our current folder
 - `git remote -v` lists of remotes that we already add
-- `git remote rename <old branch name> <new branch name>` rename a remote branch
-- `git remote remove <branch name>` remove a remote branch
+- `git remote rename <old branch name> <new branch name>` rename a remote alias
+- `git remote remove <branch name>` remove a remote alias
 
 Pushing
 > Pushing means we push our local commit in our branch to the repository
@@ -183,3 +183,8 @@ But before the task start, you need to prepare:
   4. Create a file called readme.md (still in master branch)
   5. Fill that file with introduction telling that this is your git practice repository
   6. Commit & push
+
+<!-- TODO add conflict practice -->
+<!-- TODO add git pull practice -->
+<!-- TODO add git modify local brach practice -->
+<!-- TODO add git modify repository brach practice -->

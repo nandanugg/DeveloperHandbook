@@ -61,7 +61,7 @@ After downloading your desired Linux, it's time to install [Rufus](https://rufus
   Choose install Ubuntu
 - Keep pressing continue
 - ![installationtype](./installation/installationtype.png)
-  If you see a page called "Installation Page", please choose
+  If you see a page called "Installation Type", please choose
     - `Install Ubuntu alongside Windows Boot Manager` for dual boot
     - `Erase disk and install Ubuntu` to fully using Ubuntu (All of your data will be erased, if you haven't back up your data, please restart your laptop and go back to Windows by long pressing the power button and unplugging your flash drive before the computer boots)
 - ![installationtype](./installation/continueinstallubuntu.png)

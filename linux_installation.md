@@ -24,12 +24,16 @@ After downloading your desired Linux, it's time to install [Rufus](https://rufus
 - Open Rufus
 - Choose Flash Drive
 - Choose your flash drive
+  
   ![choose-flash](./installation/choose-flash.png)
 - Choose your Linux .iso file
+  
   ![choose-iso](./installation/choose-iso.png)
 - Choose MBR Partition Scheme
+  
   ![choose-mbr](./installation/choose-mbr.png)
 - Choose FAT32/FAT file system
+  
   ![choose-fat](./installation/choose-fat.png)
 - Press start!
 ----------

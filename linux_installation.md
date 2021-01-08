@@ -1,5 +1,5 @@
 # Intro
-Before starting the class, you need to prepare your computer to match the learning environment. We use Linux (debian), you can't use Windows with WSL yet because it's still beta, and if you don't know what you're doing, you will cause a lot of problems
+Before starting the class, you need to prepare your computer to match the learning environment
 
 ----------
 # Download

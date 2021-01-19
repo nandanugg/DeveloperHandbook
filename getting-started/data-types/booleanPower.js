@@ -59,12 +59,18 @@ if (zero) {
 }
 
 // null falsy
-let nullValue = null
-if (nullValue) {
-  console.log("nullValue:", "A");
+let nullVariable = null
+if (nullVariable) {
+  console.log("nullVariable:", "A");
 } else {
-  console.log("nullValue:", "B"); // this will be shown
+  console.log("nullVariable:", "B"); // this will be shown
 }
 
-// undefined falsy will be shown in object explanation
+// undefined falsy
+let undefinedVariable;
+if (undefinedVariable) {
+  console.log("undefinedVariable:", "A");
+} else {
+  console.log("undefinedVariable:", "B"); // this will be shown
+}
 // More about falsy values in https://developer.mozilla.org/en-US/docs/Glossary/Falsy

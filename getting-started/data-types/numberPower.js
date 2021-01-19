@@ -1,25 +1,46 @@
-// Number tambah number
-console.log('\n2 + 2')
-console.log(2 + 2)
+/**
+ * Run this file by using "node numberPower"
+ *
+ * A number is a value containing number, because it is a number
+ * we can use aritmethic operators
+ */
 
-// Number tambah string
-console.log('\n2 + "2"')
-console.log(2 + '2')
+// How to write it
+let age = 17
 
-var base = 1
-var addedPlusPlus = added++
-var addedNormal = base + 1
-// var addedShort += 1 // 👈 will not work
-base += 1
+// Basic sum 
+let a = 2
+let b = 3
+let sumScore = a + b
+console.log('sumScore:', sumScore)
 
-// Kamu dapat melakukan fungsi matematika lain seperti
+// Aritmethic operators
+console.log('substract:', 10 - 5);
+console.log('times:', 10 * 5);
+console.log('divide:', 10 / 5);
+console.log('modulo:', 10 % 5);
+console.log('exponential:', 10 ** 5);
+// More on aritmehtic operators in https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#arithmetic_operators
 
-console.log(10 - 20); // Pengurangan
+// String add number
+let c = 10
+let d = "10"
+console.log("string add number:", c + d); // result will be "1010", string + number = string
 
-console.log(4 * 2); // Pengkalian
 
-console.log(4 / 2); // Pembagian
+/**
+ * These are assignment operators, it usualy combined
+ * with looping
+ */
 
-console.log(4 ** 2); // Exponential
+// Increment number by one (usually used for looping)
+let increment = 1
+increment++ // will change the increment variable value
+console.log('increment:', increment);
 
-// for more, check https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+// Increment number by two (also usually used for looping)
+let incrementByTwo = 1
+incrementByTwo += 2
+console.log('increment by two:', incrementByTwo);
+
+// More on assignment operators in https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#assignment_operators

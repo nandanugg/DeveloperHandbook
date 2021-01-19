@@ -1,54 +1,61 @@
-// Sebuah object adalah variable yang isinya kumpulan variable lain
-// seperti manusia, manusia memiliki nama awal, akhir, umur, teman, dll
-// Sebuah objek umumnya digunakan untuk hal-hal yang tidak dapat 
-// dijelaskan dengan satu variable saja, contohnya seperti:
-// kegiatan, memiliki nama kegiatan, 
-var user = {
-  // 👇 key / property
-  firstName:
-    // 👇 value
-    'Bib',
-  // 👇 jika di gabung, jadinya property & value
-  lastName: "Subabib", // 👈 bisa di baca "pada property lastName terdapat value 'subabbib'"
-  age: 34,
-  friends: [
-    "Din",
-    "Bia",
-    "Nanda"
-  ]
+/**
+ * Run this file by using "node objectPower"
+ * 
+ * An object is a value containing sub values, it usually
+ * used for hoding data that needs many variable to explain
+ * like a user, a user have name, age, birthdate, and etc
+ * 
+ * The point is, there's a lot of things that can't be 
+ * explained by one variable, that's why object is created
+ */
+
+// How to write it
+let user = {
+  name: "Nanda", // the "name" part is usually called property, and the "Nanda" part is the value
+  age: 17,
+  address: {
+    city: 'Sleman',
+    province: "DIY"
+  },
+  friends: ['Jauza', 'Wildan']
 }
 
-// cara mengakses value 'Bib'
-console.log('\nAkses value "Bib"')
-// 👇 masukkan property nya
-console.log('hasil akses value "Bib" dengan memasukkan property:', user.firstName)
-// 👇 bisa juga masukin property nya dengan string
-console.log('hasil akses value "Bib" dengan memasukkan property string:', user["firstName"])
+// Ways to access it
+console.log('Access object propery:', user.name); // Nanda
 
-// menambah property & value baru
-user.gender = 'female'
-console.log('hasil user.gender:', user.gender)
+console.log('Access object propery using string:', user["name"]); // Nanda
 
-// menghapus property & value yang sudah ada
-delete user.friends
-// jika tidak ada, maka hasil dari console.log() dibawah akan berisikan
-// undefined, yang artinya tidak ada / tidak terdefinisikan
-console.log('hasil delete user.friends:', user.friends)
+let propertyName = 'age'
+console.log('Access object propery using variable:', user[propertyName]); // 17
 
-// mengcopy property value firstName userRizka ke variabel
-console.log('\nCopy firstName user')
-var firstNameUser = user.firstName
-console.log(firstNameUser)
-firstNameUser = "Din"
-console.log(firstNameUser)
+console.log('Access object sub propery:', user.address.city); // Sleman
 
-console.log('\nMereferensi user')
-// jika membuat variabel dengan isi objek, maka variabel tidak mengcopy objek, melainkan variabel hanya akan mereferensikan objek tersebut
-var newUser = user
-console.log(newUser.firstName)
+console.log('Access object sub array propery:', user.friends[1]); // Wildan
 
-// diarenakan variabel hanya mereferensikan, jika objek aslinya diubah property value nya, maka property value dari variabel akan ikut berubah
-user.firstName = "Terserah deh"
-console.log(newUser.firstName)
+// How to add new property after object is created
+user.catName = "meng"
+console.log('Add new property:', user.catName);
 
-// for more, check https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+// How to delete a property
+delete user.catName
+console.log('Delete new property:', user.catName);
+
+
+// Object value is a bit different from normal values
+
+// In normal values like string, boolean, number, and some unmentioned values...
+let oldName = "Mark"
+let newName = oldName // newName is copying value from oldName variable
+console.log(newName); // "Mark"
+oldName = "Brad" // so if we change the oldName, the newName will not be changed because newName copying instead of referencing
+
+// But in object..
+let city = {
+  name: "Jakarta",
+  island: 'Java'
+}
+let newCity = city // the newCity is referencing city object
+console.log(newCity.name); // Jakarta
+
+city.name = "Bandung" // if we change the city property value
+console.log(newCity.name); // Bandung, the newCity will also follow, because it "referencing" instead of "copying"

@@ -1,23 +1,20 @@
-var weatherForecast = [33, 34, 31, 29, 33]
-var isAllUserVote = [true, true, false]
+/**
+ * Run this file by using "node arrayPower"
+ * 
+ * An array os a value that containing lists of values
+ */
 
-var nameList = [
-  `Nanda`,
-  'Rizka',
-  'Din'
-]
+// How to write
+let weatherForecasts = [33, 34, 31, 29, 33]
 
-console.log('\nAkses array entri pertama')
-console.log(nameList[0])
 
-console.log('\nMenggabungkan array jadi satu kata')
-console.log(nameList.join('-'))
+/**
+ * In array, the first order number of the list value is always
+ * starts with zero, and these order number are often called "index"
+ */
+// How to access the array contents
+console.log('Take first array:', weatherForecasts[0]) // index 0 means the first value in the array
 
-console.log('\nMemodifikasi setiap isi dari array')
-console.log(
-  weatherForecast.map(function (celcius) {
-    return celcius + 4
-  })
-)
-
-// for more, check https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// How to access the array but using a variable
+let index = 2
+console.log('Take array with variable as index:', weatherForecasts[index]);

@@ -1,31 +1,70 @@
-console.log('\nBoolean biasa')
-var isExecuteCommand = true
-if (isExecuteCommand) {
-  console.log("Command executed!")
-}
+/**
+ * Run this file by using "node booleanPower"
+ * 
+ * A boolean is a value that have logical meaning, commonly used for ifs
+ */
 
-console.log('\nFalsy number')
-var userCount = 0
-if (userCount) {
-  console.log(`There are ${userCount} users here!`)
+// How to write it
+let isRaining = false
+let isSunny = true
+
+// How to use it in if
+if (isRaining) {
+  console.log('IsRaining if:', "Today is raining");
 } else {
-  console.log("No users, so sad 😭")
+  console.log('IsRaining if:', "Today isn't raining");
 }
 
-console.log('\nFalsy string')
-var userInput = ""
-if (userInput) {
-  console.log(`your input is ${userInput}`)
+// Boolean can also be written in boolean operator
+// Below opearor (==) is called "equal to" comparison operator
+let isSame = 1 == 1
+console.log('IsSame:', isSame);
+
+// Below operator (&&) is called "and" logical operator
+// the (!) is called negation, it reverts the value from false to true and vice versa
+let isGoodDay = !isRaining && isSunny // if isRaining = false AND isSunny = true
+console.log('isGoodDay:', isGoodDay);
+
+// More about boolean operators in https://www.w3schools.com/js/js_comparisons.asp
+
+// A true boolean actually it just a 1 number
+let boolean = true
+let number = 1
+console.log('Boolean plus number:', boolean + number) // 2
+
+/**
+ * In Javascript, a false is commonly consists of five things
+ * (actually there's more that five, but these are the most common one)
+ * 1. false
+ * 2. empty string ('')
+ * 3. zero and negative numbers (0)
+ * 4. null
+ * 5. undefined
+ */
+
+// empty string falsy
+let emptyString = ''
+if (emptyString) {
+  console.log("emptyString:", "A");
 } else {
-  console.log('please input something 🥺')
+  console.log("emptyString:", "B"); // this will be shown
 }
 
-console.log('\nFalsy null')
-var userGender = null
-if (userGender) {
-  console.log(`your gender is ${userGender}`)
+// zero falsy
+let zero = 0
+if (zero) {
+  console.log("zero:", "A");
 } else {
-  console.log("User choosed to not say it's gender")
+  console.log("zero:", "B"); // this will be shown
 }
 
-// for more, check https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+// null falsy
+let nullValue = null
+if (nullValue) {
+  console.log("nullValue:", "A");
+} else {
+  console.log("nullValue:", "B"); // this will be shown
+}
+
+// undefined falsy will be shown in object explanation
+// More about falsy values in https://developer.mozilla.org/en-US/docs/Glossary/Falsy

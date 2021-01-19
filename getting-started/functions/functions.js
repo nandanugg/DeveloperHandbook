@@ -1,44 +1,69 @@
-// Function is a collection of codes
+/**
+ * Run this file by using "node functions"
+ *
+ * Function is a collection of codes, it commonly
+ * used to encapsulate and reuse codes so we can
+ * save lines of code
+ */
 
-// function have a structure, that is:
-// 👇 function declaration
-function
-  // 👇 function name
-  addDollarSign
-  // 👇 parameter
-  (number) {
-  // 👇 function process
-  const output = `$${number}`
-  // 👇 return / result of the function
-  return output
+// Function structures
+function functionName(parameter) {
+  let process = 'this is the result'
+  return process
 }
-// example using function to fill a value
-var itemValue = addDollarSign(200)
-console.log(itemValue) // $200
+// if we write a function without call / use / execute it, we will
+// never be able to run the code inside the function
 
-// function have many differencies
-// impure function
-// is a function that contain some variable / function outside of it's scope
-var startingMessage = 'The message is :' // 👈 this variable is used in showMessage function
+//       👇 function name 👇 parameter
+function addDollarSign(number) {
+  const output = `$${number}` // 👈 process
+  return output // 👈 return / result of the function
+}
+// 👇 the function result will be inserted here
+let itemValue = addDollarSign(200) // 👈 how to execute a function
+console.log('from addDollarSign()', itemValue) // $200
+
+function getHello() {
+  return 'hello'
+}
+// we can put a function directy into log
+console.log('from getHello():', getHello()); // hello
+
+function sayHello() {
+  console.log('from sayHello():', "hello");
+}
+// we can just use a function if we don't need it's return value or does't have one
+sayHello()
+
+// Function concepts
+
+/**
+ * Impure function
+ * 
+ * Is a function that uses any functions or variables outside
+ * of its function
+ */
+
+let startingMessage = 'The message is :'
 
 function showMessage(message) {
   const output = `${startingMessage} ${message}`
-  console.log(output)
+  console.log('from showMessage():', output)
 }
-// try to change this string and see what happens
 showMessage("Halo semua!")
 
-// pure function
-// is a function that's not containing any variable / function outside of it's scope
+/**
+ * Pure function
+ *
+ * Is a function that only uses functions or variables inside
+ * of its function
+ */
+
 function addExclamationMark(word) {
-  // add an exlamation mark at the end of word
   const output = `${word}!`
   return output
 }
 
-// the return value is copied to variable
 var addedExclamationWord = addExclamationMark("Budi")
-console.log(addedExclamationWord) // Budi!
-// or in short
-console.log(addExclamationMark("Budiman")) // Budiman!
+console.log('from addExclamationMark():', addedExclamationWord)
 

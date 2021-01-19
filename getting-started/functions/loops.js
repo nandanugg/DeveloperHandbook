@@ -1,4 +1,13 @@
+/**
+ * Run this file by using "node loops"
+ *
+ * A loop is usually used for doing a processing
+ * for each data recieved, there are some other usecases
+ * too that we will find along the way for being a developer
+ */
+
 // there are many types of loop
+
 // classic loop
 const loopTimes = 5
 for (let index = 0; index < loopTimes; index++) {
@@ -8,8 +17,8 @@ for (let index = 0; index < loopTimes; index++) {
 // while loop
 let i = 0;
 while (i < loopTimes) {
-  console.log(`loop while number ${i}`);
   i++;
+  console.log(`loop while number ${i}`);
 }
 
 
@@ -19,10 +28,8 @@ const user = {
   lastName: "mang oleh"
 }
 for (const key in user) {
-  if (user.hasOwnProperty(key)) {
-    const element = user[key];
-    console.log(`loop object value with value ${element}`);
-  }
+  const element = user[key];
+  console.log(`loop object value with value ${element}`);
 }
 
 // for of loop (for looping array items)
@@ -30,8 +37,3 @@ const temperatures = [32, 33, 31, 29, 18]
 for (const temperature of temperatures) {
   console.log(`loop array with for of loop ${temperature}`);
 }
-
-// forEach loop (for looping array items)
-temperatures.forEach(function (temperature) {
-  console.log(`loop array with for each loop ${temperature}`)
-})

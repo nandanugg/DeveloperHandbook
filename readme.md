@@ -11,8 +11,8 @@ This repository contains things that needed to learn backend development from ze
 - Markdown
 - [Git](git.md)
 ### Getting started
-- Data types
-- Functions
+- [Data types](getting-started/data-types)
+- [Functions](getting-started/functions)
 - Basic Backend
 - CRUD Concept
 - API Concept

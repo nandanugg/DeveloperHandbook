@@ -6,6 +6,12 @@ console.log(2 + 2)
 console.log('\n2 + "2"')
 console.log(2 + '2')
 
+var base = 1
+var addedPlusPlus = added++
+var addedNormal = base + 1
+// var addedShort += 1 // 👈 will not work
+base += 1
+
 // Kamu dapat melakukan fungsi matematika lain seperti
 
 console.log(10 - 20); // Pengurangan

@@ -36,11 +36,11 @@ console.log("string add number:", c + d); // result will be "1010", string + num
 // Increment number by one (usually used for looping)
 let increment = 1
 increment++ // will change the increment variable value
-console.log('increment:', increment);
+console.log('increment:', increment); // 2
 
 // Increment number by two (also usually used for looping)
 let incrementByTwo = 1
 incrementByTwo += 2
-console.log('increment by two:', incrementByTwo);
+console.log('increment by two:', incrementByTwo); // 3
 
 // More on assignment operators in https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#assignment_operators

@@ -34,11 +34,18 @@ console.log('Access object sub array propery:', user.friends[1]); // Wildan
 
 // How to add new property after object is created
 user.catName = "meng"
-console.log('Add new property:', user.catName);
+console.log('Add new property:', user.catName); // meng
 
 // How to delete a property
 delete user.catName
-console.log('Delete new property:', user.catName);
+console.log('Delete new property:', user.catName); // undefined
+
+// because user.catName is already undefined, we can use it with if
+if (user.catName) {
+  console.log('user.catName:', "👀 do you change something so i'm called?");
+} else {
+  console.log('user.catName:', "😁 undefined should be falsy");
+}
 
 
 // Object value is a bit different from normal values

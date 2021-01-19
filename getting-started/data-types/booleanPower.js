@@ -10,7 +10,7 @@ let isSunny = true
 
 // How to use it in if
 if (isRaining) {
-  console.log('IsRaining if:', "Today is raining");
+  console.log('IsRaining if:', "Today is raining"); // this will be called
 } else {
   console.log('IsRaining if:', "Today isn't raining");
 }
@@ -18,12 +18,12 @@ if (isRaining) {
 // Boolean can also be written in boolean operator
 // Below opearor (==) is called "equal to" comparison operator
 let isSame = 1 == 1
-console.log('IsSame:', isSame);
+console.log('IsSame:', isSame); // true
 
 // Below operator (&&) is called "and" logical operator
 // the (!) is called negation, it reverts the value from false to true and vice versa
 let isGoodDay = !isRaining && isSunny // if isRaining = false AND isSunny = true
-console.log('isGoodDay:', isGoodDay);
+console.log('isGoodDay:', isGoodDay); // true
 
 // More about boolean operators in https://www.w3schools.com/js/js_comparisons.asp
 

@@ -1,10 +1,11 @@
+var weatherForecast = [33, 34, 31, 29, 33]
+var isAllUserVote = [true, true, false]
+
 var nameList = [
   `Nanda`,
   'Rizka',
   'Din'
 ]
-var weatherForecast = [33, 34, 31, 29, 33]
-var isAllUserVote = [true, true, false]
 
 console.log('\nAkses array entri pertama')
 console.log(nameList[0])

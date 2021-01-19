@@ -17,7 +17,7 @@ for (let index = 0; index < loopTimes; index++) {
 // while loop
 let i = 0;
 while (i < loopTimes) {
-  i++;
+  i++; // 👈 we must include this otherwise it will be in infinite loop!
   console.log(`loop while number ${i}`);
 }
 

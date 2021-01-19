@@ -43,7 +43,6 @@ sayHello()
  * Is a function that uses any functions or variables outside
  * of its function
  */
-
 let startingMessage = 'The message is :'
 
 function showMessage(message) {
@@ -58,7 +57,6 @@ showMessage("Halo semua!")
  * Is a function that only uses functions or variables inside
  * of its function
  */
-
 function addExclamationMark(word) {
   const output = `${word}!`
   return output

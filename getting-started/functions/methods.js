@@ -1,21 +1,61 @@
-// Methods is a function that lies inside a variable / function
+/**
+ * Run this file by using "node methods"
+ *
+ * A method is a function that lies inside
+ * objects, they usually used to modify the
+ * object value, or just a collection of
+ * function that organized into one object
+ */
 
-const catName = "bul bul"
-catName
-  // 👇 method
-  .split(" ")
+let user = {
+  name: "Nanda",
+  age: 17,
+  address: {
+    city: 'Sleman',
+    province: "DIY"
+  },
+  friends: ['Jauza', 'Wildan'],
+  // 👇 how to write a method
+  greet() {
+    /**
+     * By writing a method, we will have a special access
+     * to a code called "this"
+     * 
+     * "this" refers to current object that have the method
+     * so if method greet() is inside user object, then
+     * "this" will refer to user object
+     */
+    return `Hello! My name is ${this.name}, my age is ${this.age}
+    I live in ${this.address.city} and I have many friends such as ${this.friends.join(', ')}`
+  }
+}
 
-const clothCount = 34
-clothCount
-  // 👇 method
-  .toString()
+console.log(user.greet());
 
-// in some variables, you can even chain them too!
-const userNames = ['wishes212', 'whising342', 'wished3']
-userNames
-  // 👇 method
-  .join()
-  // 👇 method chain
-  .split(',')
-  // 👇 method chain
-  .reverse()
+/**
+ * In fact, all of data types in Javascript are objects
+ */
+
+// Methods in string values
+let string = "this is string"
+console.log("from toUpperCase() method:", string.toUpperCase());
+console.log("from substr() method:", string.substr(5));
+// More at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#instance_methods
+
+// Methods in number values
+let number = 1.21345
+console.log("from toFixed() method:", number.toFixed(2));
+// More at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+// There is no usable method in Boolean
+
+// Methods in array
+let friends = ['Akbar', "Siti", "Winda"]
+console.log(friends.join());
+console.log(friends.includes("Siti"));
+console.log(friends.map((friend) => {
+  return `${friend} mah bro`
+}));
+// More at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods
+
+// In object, we create our own method 😁

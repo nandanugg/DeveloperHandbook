@@ -3,7 +3,6 @@ var nameList = [
   'Rizka',
   'Din'
 ]
-console.log("oleoleeee")
 var weatherForecast = [33, 34, 31, 29, 33]
 var isAllUserVote = [true, true, false]
 

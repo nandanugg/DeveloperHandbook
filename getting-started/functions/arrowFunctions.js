@@ -20,9 +20,6 @@ let arrowFunction = () => {
 }
 console.log('from variableArrowFunction():', arrowFunction())
 
-
-
-
 /**
  * Callback is a way to return a value inside a function
  * 
@@ -33,8 +30,10 @@ console.log('from variableArrowFunction():', arrowFunction())
  * in function called setTimeout()
  */
 
-// setTimeout() delays the execution of the arrow function 
-// by how much milliseconds that we put in second parameter
+/**
+ * setTimeout() delays the execution of the arrow function
+ * by how much milliseconds that we put in second parameter
+ */
 setTimeout(() => {
   console.log('this log will be executed after 3000ms (3 seconds)'); // 👈 this line will be executed after 3 secs
 }, 3000);
@@ -57,15 +56,15 @@ console.log('from getMessage():', getMessage()); // undefined
  * However, we can trick synchronous function by using
  * the callback pattern to wait the setTimeout() delay
  */
-function getMessageWithCallback(callback) {
+function getMessageWithCallback(cb) {
   setTimeout(() => {
-    callback('this is a string from getMessageWithCallback()')
+    cb('this is a string from getMessageWithCallback()')
     /**
      * 👆 in callback pattern, the callback parameter should be
-     * inserted with an arrow / anonymous function
+     * inserted with anfunction
      * 
-     * Because callback is a an arrow / anonymous function
-     * we can use the callback parameter like a function, and then
+     * Because cb is a function
+     * we can use the cb parameter like a function, and then
      * call it with parameter of this function result
      */
   }, 3000);
@@ -84,14 +83,12 @@ getMessageWithCallback((result) => {
 
 /**
  * A callback pattern is used in most of Javascript method
- * one of which is array map() method
+ * one of which is array forEach() method
  */
 
-// .map() method is used to modify each item in an array
+// .forEach() method is used to loop arrays
 var joinedNames = ["Budi", "Siti", "Halim"]
-var botNames = joinedNames.map((name) => {
-  return `${name}-bot`
+var botNames = joinedNames.forEach((name) => {
+  console.log('.forEach():', name);
 })
-console.log("from joinedNames.map()", botNames)
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 

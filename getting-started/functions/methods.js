@@ -38,22 +38,22 @@ console.log(user.greet());
 
 // Methods in string values
 let string = "this is string"
-console.log("from toUpperCase() method:", string.toUpperCase());
-console.log("from substr() method:", string.substr(5));
+console.log(".toUpperCase():", string.toUpperCase());
+console.log(".substr():", string.substr(5));
 // More at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#instance_methods
 
 // Methods in number values
 let number = 1.21345
-console.log("from toFixed() method:", number.toFixed(2));
+console.log(".toFixed():", number.toFixed(2));
 // More at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
 // There is no usable method in Boolean
 
 // Methods in array
 let friends = ['Akbar', "Siti", "Winda"]
-console.log(friends.join());
-console.log(friends.includes("Siti"));
-console.log(friends.map((friend) => {
+console.log(".join():", friends.join());
+console.log(".includes():", friends.includes("Siti"));
+console.log(".map():", friends.map((friend) => {
   return `${friend} mah bro`
 }));
 // More at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods

@@ -16,7 +16,7 @@ function addDollarSign(number) { // "addDollarSign" = function name; "number" = 
 // How to use a function
 let itemValue = addDollarSign(200) // "200" = value that we want to be putted inside the function to be processed
 // "itemValue" = a variable that will be used to place the function result
-console.log('from addDollarSign()', itemValue) // $200
+console.log('addDollarSign():', itemValue) // $200
 
 // if we try to use a function written with a parameter without inserting a value in the parameter when using it
 let functionWithoutParameter = addDollarSign()
@@ -37,11 +37,11 @@ function getHello() {
   return 'hello'
 }
 // we can put the function return value directly to another function
-console.log('from getHello():', getHello()); // hello
+console.log('getHello():', getHello()); // hello
 
 // A function also able to not have a return value
 function sayHello() {
-  console.log('from sayHello():', "hello");
+  console.log('sayHello():', "hello");
 }
 
 /**
@@ -56,5 +56,5 @@ sayHello()
  * and we still want to try get the return, it will
  * be retuned with "undefined"
  */
-let functionValue = sayHello()
-console.log("functionValue:", functionValue); // undefined
+let functionReturn = sayHello()
+console.log("functionValue:", functionReturn); // undefined

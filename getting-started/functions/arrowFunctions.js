@@ -12,13 +12,13 @@
 let anonymousFunction = function () {
   return "this is an anonymous function"
 }
-console.log('from variableFunction():', anonymousFunction())
+console.log('variableFunction():', anonymousFunction())
 
 // Arrow function structure
 let arrowFunction = () => {
   return "this is an arrow function"
 }
-console.log('from variableArrowFunction():', arrowFunction())
+console.log('variableArrowFunction():', arrowFunction())
 
 /**
  * Callback is a way to return a value inside a function
@@ -50,7 +50,7 @@ function getMessage() {
   }, 3000);
   console.log("getMessage() has finished reading all of it's codes!");
 }
-console.log('from getMessage():', getMessage()); // undefined
+console.log('getMessage():', getMessage()); // undefined
 
 /**
  * However, we can trick synchronous function by using
@@ -78,7 +78,7 @@ function getMessageWithCallback(cb) {
  */
 getMessageWithCallback((result) => {
   // the result parameter will be filled with the getMessageWithCallback() string
-  console.log('from getMessageWithCallback():', result); // successfull!
+  console.log('getMessageWithCallback():', result); // successfull!
 })
 
 /**

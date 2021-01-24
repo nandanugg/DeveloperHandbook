@@ -103,29 +103,40 @@ if (undefinedVariable) {
 let userAge = 50
 
 let ageMessage = userAge > 0 ? "Thank you!" : "Please input the right age number"
-console.log("ageMessage", ageMessage); // "Thank you!"
+console.log("ageMessage:", ageMessage); // "Thank you!"
 
 // Terniary operator with falsy operator
 let userName = ""
 let nameMessage = userName ? "Thank you!" : "Please input your name"
-console.log("nameMessage", nameMessage); // "Please input your name"
+console.log("nameMessage:", nameMessage); // "Please input your name"
+
+// Combo terniary operator
+let isHaveBook = true
+let isHaveTime = true
+let whatToDo = isHaveBook ? isHaveTime ? "Go read" : "Read book later" : "Go buy a book"
+console.log("whatToDo:", whatToDo); // "Go read"
+
+let isStorm = false
+let isWinter = false
+let outsideCondition = isStorm ? "Don't go outside!" : isWinter ? "Get a coat" : "It's safe outside"
+console.log("outsideCondition:", outsideCondition); "It's safe outside"
 
 // Logical (or) operator with truthy
 let userParentAge = 55
 let parentAgeMessage = userParentAge || "Please input the right age number"
-console.log("parentAgeMessage", parentAgeMessage); // 55
+console.log("parentAgeMessage:", parentAgeMessage); // 55
 
 // Logical (or) operator with falsy
 let userPetAge = 0
 let petNameMessage = userPetAge || "Please input the right age number"
-console.log("petNameMessage", petNameMessage); // "Please input the right age number"
+console.log("petNameMessage:", petNameMessage); // "Please input the right age number"
 
 // Logical (and) operator with truthy
 let userParentName = "William"
 let parentNameMessage = userParentName && "Thank you for inputting name"
-console.log("parentNameMessage", parentNameMessage); // "Thank you for inputting username"
+console.log("parentNameMessage:", parentNameMessage); // "Thank you for inputting username"
 
 // Logical (and) operator with falsy
 let userSiblingName = ""
 let siblingNameMessage = userSiblingName && "Thank you for inputting name"
-console.log("siblingNameMessage", siblingNameMessage); // ""
+console.log("siblingNameMessage:", siblingNameMessage); // ""

@@ -22,14 +22,10 @@ let user = {
 
 // Ways to access it
 console.log('Access object propery:', user.name); // Nanda
-
 console.log('Access object propery using string:', user["name"]); // Nanda
-
 let propertyName = 'age'
 console.log('Access object propery using variable:', user[propertyName]); // 17
-
 console.log('Access object sub propery:', user.address.city); // Sleman
-
 console.log('Access object sub array propery:', user.friends[1]); // Wildan
 
 // How to add new property after object is created
@@ -42,7 +38,7 @@ console.log('Delete new property:', user.catName); // undefined
 
 // because user.catName is already undefined, we can use it with if
 if (user.catName) {
-  console.log('user.catName:', "👀 do you change something so i'm called?");
+  console.log('user.catName:', "👀 do you add a catName property with truthy values?");
 } else {
   console.log('user.catName:', "😁 undefined should be falsy");
 }

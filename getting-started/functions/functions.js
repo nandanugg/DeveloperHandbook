@@ -6,34 +6,29 @@
  * save lines of code
  */
 
-// Function structures
-function functionName(parameter) {
-  let process = 'this is the result'
-  return process
-}
-// if we write a function without call / use / execute it, we will
-// never be able to run the code inside the function
 
+// How to create a function
 //       👇 function name 👇 parameter
 function addDollarSign(number) {
   const output = `$${number}` // 👈 process
   return output // 👈 return / result of the function
 }
-// 👇 the function result will be inserted here
-let itemValue = addDollarSign(200) // 👈 how to execute a function
+// How to use a function
+// if we don't need the return
+addDollarSign(200)
+// if we need the return to be assigned with a value
+let itemValue = addDollarSign(200)
 console.log('from addDollarSign()', itemValue) // $200
 
 function getHello() {
   return 'hello'
 }
-// we can put a function directy into log
+// we need the return to be logged into terminal
 console.log('from getHello():', getHello()); // hello
 
 function sayHello() {
   console.log('from sayHello():', "hello");
 }
-// we can just use a function if we don't need it's return value or does't have one
-sayHello()
 
 // Function concepts
 

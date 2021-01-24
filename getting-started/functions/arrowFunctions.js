@@ -21,6 +21,8 @@ let variableArrowFunction = () => {
 }
 console.log('from variableArrowFunction():', variableArrowFunction())
 
+// TODO: add reference vs calling a function
+
 /**
  * Callback is a way to return a value inside a function
  * 

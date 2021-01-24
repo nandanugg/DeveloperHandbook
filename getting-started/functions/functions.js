@@ -32,11 +32,17 @@ console.log("functionWithoutParameter:", functionWithoutParameter); // "$undefin
  * undefined + string = string
  */
 
-// a function also can to not have a parameter
+// A function can have many parameters
+function combineString(firstWord, secondWord) {
+  return `${firstWord} ${secondWord}`
+}
+// we can put the function return value directly to another function
+console.log("combineString():", combineString('Hello', "Mark")); // "Hello Mark"
+
+// A function also can to not have a parameter
 function getHello() {
   return 'hello'
 }
-// we can put the function return value directly to another function
 console.log('getHello():', getHello()); // hello
 
 // A function also able to not have a return value

@@ -121,11 +121,11 @@ let petNameMessage = userPetAge || "Please input the right age number"
 console.log("petNameMessage", petNameMessage); // "Please input the right age number"
 
 // Logical (and) operator with truthy
-let userParentName = ""
-let parentNameMessage = userParentName && "Thank you for inputting username"
-console.log("petNameMessage", petNameMessage); // "Thank you for inputting username"
+let userParentName = "William"
+let parentNameMessage = userParentName && "Thank you for inputting name"
+console.log("parentNameMessage", parentNameMessage); // "Thank you for inputting username"
 
 // Logical (and) operator with falsy
 let userSiblingName = ""
-let siblingNameMessage = userSiblingName && "Thank you for inputting username"
+let siblingNameMessage = userSiblingName && "Thank you for inputting name"
 console.log("siblingNameMessage", siblingNameMessage); // ""

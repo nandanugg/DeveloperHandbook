@@ -12,13 +12,13 @@
 let anonymousFunction = function () {
   return "this is an anonymous function"
 }
-console.log('variableFunction():', anonymousFunction())
+console.log('anonymousFunction():', anonymousFunction())
 
 // Arrow function structure
 let arrowFunction = () => {
   return "this is an arrow function"
 }
-console.log('variableArrowFunction():', arrowFunction())
+console.log('arrowFunction():', arrowFunction())
 
 // Arrow function can also have multipe parameter
 let mutipleParameters = (firstWord, secondWord) => {

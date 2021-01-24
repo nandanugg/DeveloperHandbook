@@ -20,6 +20,22 @@ let arrowFunction = () => {
 }
 console.log('variableArrowFunction():', arrowFunction())
 
+// Arrow function can also have multipe parameter
+let mutipleParameters = (firstWord, secondWord) => {
+  return `${firstWord} ${secondWord}`
+}
+console.log("mutipleParameters()", mutipleParameters("My", "toy")); // My toy
+
+// If an arrow function have one parameter, we can simplify it without using braces "()"
+let convertToHashtag = word => {
+  return `#${word}`
+}
+console.log("convertToHashtag():", convertToHashtag('beach')); // "#beach"
+
+// If an arrow function have one statement inside it, we can simplify it without using curly braces "{}"
+let convertToDollar = amount => `$${amount}`
+console.log("convertToDollar():", convertToDollar(500)); // "$500"
+
 /**
  * Callback is a way to return a value inside a function
  * 

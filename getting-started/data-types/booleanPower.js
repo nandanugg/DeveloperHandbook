@@ -96,7 +96,7 @@ if (undefinedVariable) {
  * Logical operators and falsy values
  * 
  * In Javascript, we often use logical / terniary opertor to decide what value
- * should be inside a string
+ * should be inside a variable
  */
 
 // Terniary operator with comparison operator

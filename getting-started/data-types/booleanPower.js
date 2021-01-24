@@ -106,10 +106,9 @@ let ageMessage = userAge > 0 ? "Thank you!" : "Please input the right age number
 console.log("ageMessage", ageMessage); // "Thank you!"
 
 // Terniary operator with falsy operator
-
 let userName = ""
 let nameMessage = userName ? "Thank you!" : "Please input your name"
-console.log("nameMessage", nameMessage); // "Thank you!"
+console.log("nameMessage", nameMessage); // "Please input your name"
 
 // Logical (or) operator with truthy
 let userParentAge = 55

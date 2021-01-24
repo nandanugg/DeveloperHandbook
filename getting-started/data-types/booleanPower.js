@@ -119,7 +119,7 @@ console.log("whatToDo:", whatToDo); // "Go read"
 let isStorm = false
 let isWinter = false
 let outsideCondition = isStorm ? "Don't go outside!" : isWinter ? "Get a coat" : "It's safe outside"
-console.log("outsideCondition:", outsideCondition); "It's safe outside"
+console.log("outsideCondition:", outsideCondition); // "It's safe outside"
 
 // Logical (or) operator with truthy
 let userParentAge = 55

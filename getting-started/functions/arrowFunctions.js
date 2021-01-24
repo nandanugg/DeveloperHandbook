@@ -12,19 +12,19 @@
 let anonymousFunction = function () {
   return "this is an anonymous function"
 }
-console.log('anonymousFunction():', anonymousFunction())
+console.log('anonymousFunction():', anonymousFunction()) // "this is an anonymous function"
 
 // Arrow function structure
 let arrowFunction = () => {
   return "this is an arrow function"
 }
-console.log('arrowFunction():', arrowFunction())
+console.log('arrowFunction():', arrowFunction()) // "this is an arrow function"
 
 // Arrow function can also have multipe parameter
 let mutipleParameters = (firstWord, secondWord) => {
   return `${firstWord} ${secondWord}`
 }
-console.log("mutipleParameters()", mutipleParameters("My", "toy")); // My toy
+console.log("mutipleParameters()", mutipleParameters("My", "toy")); // "My toy"
 
 // If an arrow function have one parameter, we can simplify it without using braces "()"
 let convertToHashtag = word => {

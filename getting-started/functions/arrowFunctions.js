@@ -1,27 +1,27 @@
 /**
  * Run this file by using "node arrowFunctions"
  *
- * Arrow function (Anonymous function) is a function that does't
+ * Arrow / Anonymous function is a function that does't
  * have a name, it usually used for callbacks
  * 
  * Arrow function is actually a value, so we can fill
- * it into a variable, though, there's only a bit
- * of practical usability of it
+ * it into a variable
  */
 
 // Anonymous function structure
-let variableFunction = function () {
+let anonymousFunction = function () {
   return "this is an anonymous function"
 }
-console.log('from variableFunction():', variableFunction())
+console.log('from variableFunction():', anonymousFunction())
 
 // Arrow function structure
-let variableArrowFunction = () => {
+let arrowFunction = () => {
   return "this is an arrow function"
 }
-console.log('from variableArrowFunction():', variableArrowFunction())
+console.log('from variableArrowFunction():', arrowFunction())
 
-// TODO: add reference vs calling a function
+
+
 
 /**
  * Callback is a way to return a value inside a function
